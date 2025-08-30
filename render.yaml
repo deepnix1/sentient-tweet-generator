@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sentient-tweet-generator
+    env: node
+    buildCommand: NODE_ENV=production npx vite build && NODE_ENV=production npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    plan: free
