@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
+import logoImage from "@assets/sentientagi_logo-removebg-preview_1756570238300.png";
 
 interface GeneratedTweet {
   content: string;
@@ -99,11 +100,11 @@ export default function TweetGenerator() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <i className="fab fa-twitter text-primary-foreground text-sm"></i>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                <img src={logoImage} alt="Sentient AGI Logo" className="w-8 h-8 object-contain" />
               </div>
               <div>
-                <h1 className="text-xl font-semibold text-foreground">Tweet Generator</h1>
+                <h1 className="text-xl font-semibold text-foreground">Sentient tweet generator</h1>
                 <p className="text-sm text-muted-foreground">AI-powered content creation</p>
               </div>
             </div>
@@ -212,8 +213,8 @@ export default function TweetGenerator() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-6 h-6 bg-primary rounded flex items-center justify-center">
-                <i className="fab fa-twitter text-primary-foreground text-xs"></i>
+              <div className="w-6 h-6 rounded flex items-center justify-center">
+                <img src={logoImage} alt="Sentient AGI Logo" className="w-6 h-6 object-contain" />
               </div>
               <span className="text-sm text-muted-foreground">Powered by Sentient Agent Framework</span>
             </div>
